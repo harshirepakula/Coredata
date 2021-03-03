@@ -265,7 +265,7 @@ class ResultsDisplayVC: UIViewController , UITableViewDataSource , UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResultsCell", for: indexPath) as! ResultsCell
       
             cell.titleLbl.text = self.filterArr[indexPath.row].type
-            cell.amountLbl.text = String(self.filterArr[indexPath.row].amount)
+            cell.amountLbl.text = String(self.filterArr[indexPath.row].amount)+"/-"
         
         return cell
         
